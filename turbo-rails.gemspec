@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if s.respond_to?(:metadata)
-    s.metadata["github_repo"] =  "ssh://github.com/wurlinc-turbo-rails"
+    s.metadata["github_repo"] =  "https://github.com/wurlinc/turbo-rails"
     s.metadata["allowed_push_host"] = "https://rubygems.pkg.github.com/wurlinc/"
     s.metadata["homepage_uri"] = s.homepage
   else
