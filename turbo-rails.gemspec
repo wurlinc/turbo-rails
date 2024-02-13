@@ -11,6 +11,16 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = ">= 2.6.0"
 
+  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
+  # to allow pushing to a single host or delete this section to allow pushing to any host.
+  if s.respond_to?(:metadata)
+    s.metadata["github_repo"] =  "ssh://github.com/wurlinc-turbo-rails"
+    s.metadata["allowed_push_host"] = "https://rubygems.pkg.github.com/wurlinc/"
+    s.metadata["homepage_uri"] = s.homepage
+  else
+    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
+  end
+
   s.add_dependency "activejob", ">= 6.0.0"
   s.add_dependency "actionpack", ">= 6.0.0"
   s.add_dependency "railties", ">= 6.0.0"
